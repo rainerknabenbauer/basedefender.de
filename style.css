@@ -34,16 +34,21 @@ body {
 }
 
 div#navigationLeft, div#navigationRight {
-    float: left;
+    display: inline-block;
     width: 33%;
 }
 
 div#navigationMiddle {
-    float: left;
+    display: inline-block;
     width: 34%;
 }
 
 /** CONTENT **/
+
+div#content-body {
+    clear: both;
+    margin: 25px 0 25px 0;
+}
 
 .content {
     background-color: chartreuse;
@@ -51,3 +56,6 @@ div#navigationMiddle {
 
 
 /** FOOTER **/
+div#footer {
+    font-size: 0.7em;
+}
