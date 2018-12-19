@@ -18,7 +18,7 @@ body {
     min-height: 800px;
 
     padding: 1em;
-    border-radius: 50% 15% / 3% 10%;
+    border-radius: 50% 5% / 3% 10%;
     background-color: beige;
     border-color: lightgray;
     border-style: solid;
@@ -76,13 +76,14 @@ img#mugshot {
 div#social-media {
     font-size: 0.7em;
     text-align: center;
+    margin: -20px auto 0;
 }
 
 
 /** FOOTER **/
 div#footer {
     position: absolute;
-  bottom: 2em;
-  right: 2em;
+    bottom: 2em;
+    right: 2em;
     font-size: 0.7em;
 }
