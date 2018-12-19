@@ -1,5 +1,5 @@
 body {
-    background-color: floralwhite;
+    background-color:#fdfeff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 1px;
 }
@@ -19,9 +19,11 @@ a:hover{
 }
 
 .border {
+    background-color: white;
     border-color: lightgray;
     border-style: solid;
     border-width: 1px;
+    padding: 5px;
 }
 
 .gap {
@@ -38,12 +40,15 @@ a:hover{
 
     padding: 1em;
     border-radius: 50% 5% / 3% 10%;
-    background-color: beige;
+    background-color: #e6f7ff;
 }
 
 /** GLOBAL **/
 
 .navigation {
+    font-style: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-kerning: 12;
     text-align: center;
     letter-spacing: 3px;
     
@@ -98,7 +103,7 @@ div#social-media {
 div#status-box {
     height: 180px;
     border-color: darkgrey;
-    padding: 10px 0;
+    padding: 45px 0 0 20px;    
 }
 
 div#short-summary {

@@ -24,11 +24,12 @@ function onClickNavigationRight(div) {
 
 function displayContent(content) {
 
-    hideContent();
+    hideContent(content);
 
     let div = document.getElementById(content);
 
     div.style.display = "block";
+
     console.log(content+": "+div.style.display);
 }
 
@@ -38,6 +39,8 @@ function hideContent(element) {
     let elements = document.getElementsByClassName("content");
 
     Array.prototype.forEach.call(elements, element => {
+    
         element.style.display = "none";
+        
     });
 }
