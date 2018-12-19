@@ -4,9 +4,28 @@ body {
     letter-spacing: 1px;
 }
 
+a, a :active, a:focus {
+	color: #005480;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
 .super {
     display: flex;
     justify-content: center;
+}
+
+.border {
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.gap {
+    margin: 25px 0 0 0;
 }
 
 .wrapper {
@@ -20,9 +39,6 @@ body {
     padding: 1em;
     border-radius: 50% 5% / 3% 10%;
     background-color: beige;
-    border-color: lightgray;
-    border-style: solid;
-    border-width: 1px;
 }
 
 /** GLOBAL **/
@@ -61,7 +77,7 @@ div#content {
 }
 
 .content {
-    background-color: chartreuse;
+    font-size: 1em;
 }
 
 /** CONTENT LATEST **/
@@ -79,6 +95,18 @@ div#social-media {
     margin: -20px auto 0;
 }
 
+div#status-box {
+    height: 180px;
+    border-color: darkgrey;
+    padding: 10px 0;
+}
+
+div#short-summary {
+    padding: 50px 0;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
 
 /** FOOTER **/
 div#footer {
@@ -87,3 +115,9 @@ div#footer {
     right: 2em;
     font-size: 0.7em;
 }
+
+div#navi {
+    position:fixed;
+    bottom: 0%;
+    right: 50%;
+ }
