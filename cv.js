@@ -3,25 +3,33 @@
 
 function onClickNavigationLeft(div) {
 
-    displayContent(div);
+    let content = "content-latest";
+
+    displayContent(content);
 }
 
 function onClickNavigationMiddle(div) {
     
-    displayContent(div);
+    let content = "content-professional";
+
+    displayContent(content);
 }
 
-function onClickNaviationLeft(div) {
+function onClickNavigationRight(div) {
     
-    displayContent(div);
+    let content = "content-forFun";
+
+    displayContent(content);
 }
 
-function displayContent(div) {
+function displayContent(content) {
 
     hideContent();
 
+    let div = document.getElementById(content);
+
     div.style.display = "block";
-    div.textContent = "klicked";
+    console.log(content+": "+div.style.display);
 }
 
 // CONTENT
@@ -29,7 +37,7 @@ function hideContent(element) {
 
     let elements = document.getElementsByClassName("content");
 
-    elements.array.forEach(element => {
+    Array.prototype.forEach.call(elements, element => {
         element.style.display = "none";
     });
 }
