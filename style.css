@@ -5,9 +5,21 @@ body {
 }
 
 .wrapper {
-    margin: 2% 17%;
+    
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 650px;
+    max-width: 700px;
+    min-height: 800px;
+
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 50% 20% / 10% 40%;
     background-color: beige;
     border-color: lightgray;
     border-style: solid;
@@ -20,7 +32,7 @@ body {
 .navigation {
     text-align: center;
     letter-spacing: 3px;
-    background-color: white;
+    
 }
 
 .invisible {
@@ -30,7 +42,7 @@ body {
 /** HEADER **/
 
 .header {
-    background-color: blueviolet;
+    border-radius: 1em;
 }
 
 div#navigationLeft, div#navigationRight {
@@ -45,17 +57,29 @@ div#navigationMiddle {
 
 /** CONTENT **/
 
-div#content-body {
+div#content {
     clear: both;
-    margin: 25px 0 25px 0;
+    margin: 10px 0 10px 0;
 }
 
 .content {
     background-color: chartreuse;
 }
 
+/** CONTENT LATEST **/
+img#mugshot {
+    border-radius: 100%;
+    float: right;
+}
+
+div#social-media {
+    float:right;
+}
+
 
 /** FOOTER **/
 div#footer {
+    position: relative;
+    bottom: 0px;
     font-size: 0.7em;
 }
