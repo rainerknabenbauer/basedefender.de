@@ -12,25 +12,63 @@
 
 <body>
     <script src="cv.js" type="text/javascript"></script>
+
+    <div class="wrapper"> 
     
     <!-- START HEADER -->
 
-    <div id="header">
+    <div class="header">
+
+        <div class="navigation" id="navigationLeft" onClick="onClickNavigationLeft(this);">
+            Latest
+        </div>
+
+        <div class="navigation" id="navigationMiddle" onClick="onClickNavigationMiddle(this);">
+            Professional
+        </div>
+
+        <div class="navigation" id="navigationRight" onClick="onClickNavigationRight(this);">
+            For Fun
+        </div>
 
     </div>
 
     <!-- START MAIN CONTENT-->
 
-    <div>
-        <div id="firstdiv" onMouseOver="firstDiv(this)" onMouseOut="recover(this)">this is some content</div>
+    <div class="content">
 
-        <div id="seconddiv" onClick="onSecondDivClick(this)">second div</div>
+        <!-- LATEST -->
+
+        <div id="content-latest" class="content">
+        
+            <div id="firstdiv" onMouseOver="firstDiv(this)" onMouseOut="recover(this)">this is some content</div>
+
+            <div id="seconddiv" onClick="onSecondDivClick(this)">second div</div>
+
+        </div>
+
+        <!-- PROFESSIONAL -->
+
+        <div id="content-professional" class="content invisible">
+            professoinale
+        </div>
+
+        <!-- FOR FUN -->
+
+        <div id="content-forFun" class="content invisible">
+            4 fun
+        </div>
+
     </div>
 
     <!-- START FOOTER -->
 
     <div id="footer">
     
+    </div>
+
+    <!-- END Wrapper -->
+
     </div>
 
 </body>
