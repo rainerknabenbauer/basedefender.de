@@ -4,27 +4,25 @@ body {
     letter-spacing: 1px;
 }
 
-.wrapper {
-    
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
+.super {
+    display: flex;
+    justify-content: center;
+}
 
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+.wrapper {
+    position: relative;
+    text-align: left;
 
     min-width: 650px;
     max-width: 700px;
     min-height: 800px;
 
     padding: 1em;
-    border-radius: 50% 20% / 10% 40%;
+    border-radius: 50% 15% / 3% 10%;
     background-color: beige;
     border-color: lightgray;
     border-style: solid;
     border-width: 1px;
-
 }
 
 /** GLOBAL **/
@@ -67,19 +65,24 @@ div#content {
 }
 
 /** CONTENT LATEST **/
-img#mugshot {
-    border-radius: 100%;
+div#profile {
     float: right;
 }
 
+img#mugshot {
+    border-radius: 100%;
+}
+
 div#social-media {
-    float:right;
+    font-size: 0.7em;
+    text-align: center;
 }
 
 
 /** FOOTER **/
 div#footer {
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+  bottom: 2em;
+  right: 2em;
     font-size: 0.7em;
 }
