@@ -1,46 +1,48 @@
 
+let fadeInSpeed = "fast";
+
 $(document).ready(function(){
     
     /** NAVIGATION */
 
-    let fadeInSpeed = "fast";
-
-    $( "#navigationLeft" ).click(function() {
+    $( "#header-latest" ).click(function() {
 
         let content = "content-latest";
 
         hideContent(content);
-
-        $( "#"+content ).fadeIn(fadeInSpeed);
     });
 
-    $( "#navigationMiddle" ).click(function() {
+    $( "#header-professional" ).click(function() {
 
         let content = "content-professional";
 
         hideContent(content);
-
-        $( "#"+content ).fadeIn(fadeInSpeed);
     });
 
-    $( "#navigationRight" ).click(function() {
+    $( "#header-forFun" ).click(function() {
 
         let content = "content-forFun";
 
         hideContent(content);
+    });
 
-        $( "#"+content ).fadeIn(fadeInSpeed);
+    $( "#header-docs" ).click(function() {
+
+        let content = "content-forFun";
+
+        hideContent(content);
     });
  });
 
 // CONTENT
-function hideContent(element) {
+function hideContent(content) {
 
     let elements = document.getElementsByClassName("content");
 
     Array.prototype.forEach.call(elements, element => {
-    
-        element.style.display = "none";
         
+        element.style.display = "none";
     });
+
+    $( "#"+content ).fadeIn(fadeInSpeed);
 }

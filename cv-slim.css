@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f0faff;
+}
+
+/** GLOBAL */
+
+.border {
+    background-color: white;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.gap {
+    margin: 25px 0 0 0;
+}
+
+.invisible {
+    display: none;
+}
+
+/** HEADER */
+
+div#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: #005480;
+    color: white;
+    height: 3em;
+
+    border-radius: 0 0 15% 15%;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+.navigationElement {
+
+    display: flex;
+    justify-content : center;
+
+    margin: auto;
+    width: 15%;
+    height: 80%;
+    
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+
+    border-radius: 15%;
+}
+
+.navigationElement:hover {
+    color: black;
+    background-color: white;
+}
+
+/** CONTENT */
+
+div#page {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    padding-bottom: 2em;
+    margin: 0 15% 0 15%;
+}
+
+/** CONTENT LATEST **/
+div#profile {
+    float: right;
+}
+
+img#mugshot {
+    border-radius: 100%;
+}
+
+div#social-media {
+    font-size: 0.7em;
+    text-align: center;
+    margin: -20px auto 0;
+}
+
+div#status-box {
+    height: 180px;
+    border-color: darkgrey;
+    padding: 45px 0 0 20px;    
+}
+
+/** FOOTER */
+
+div#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    bottom: 0;
+    height: 2em;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    color: white;
+    background: #005480;
+}
