@@ -1,13 +1,16 @@
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: #434343;
-
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #434343;
   
-  background: radial-gradient(ellipse at top, #434343, transparent),
+    background: radial-gradient(ellipse at top, #434343, transparent),
             radial-gradient(ellipse at bottom,#e66465 , #333333);
+
+
+    font-family: Helvetica;
+    letter-spacing: 0.03em
 }
 
 /** GLOBAL */
