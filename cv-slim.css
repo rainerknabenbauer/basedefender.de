@@ -97,6 +97,14 @@ div#page {
 
 /** CONTENT LATEST **/
 
+div#content-latest {
+    text-align: center;
+}
+
+img#mugshot:hover {
+    opacity: 0.8;
+}
+
 .default-background {
     background: rgba(255, 255, 255, 0.8);
 }
