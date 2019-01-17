@@ -16,19 +16,23 @@ body {
 /** GLOBAL */
 
 .border {
-    background-color: white;
     border-color: lightgray;
     border-style: solid;
     border-width: 1px;
     padding: 5px;
 }
 
-.gap {
-    margin: 25px 0 0 0;
+.content-full-width {
+    padding-bottom: 2em;
+    margin: 25px 15% 0 15%;
 }
 
 .invisible {
     display: none;
+}
+
+.inner-padding {
+    padding: 45px 0 45px 20px;    
 }
 
 /** HEADER */
@@ -84,20 +88,19 @@ div#page {
     position: relative;
 }
 
-.content {
-    padding-bottom: 2em;
-    margin: 0 15% 0 15%;
-}
-
 .coloredBorder {
 
     border-image: linear-gradient(to right, #777777 0%, #e66465 100%);
-
     border-image-slice: 1;
     border-width: 0.15em;
 }
 
 /** CONTENT LATEST **/
+
+.default-background {
+    background: rgba(255, 255, 255, 0.8);
+}
+
 div#profile {
     float: right;
 }
@@ -115,7 +118,18 @@ div#social-media {
 div#status-box {
     height: 180px;
     border-color: darkgrey;
-    padding: 45px 0 0 20px;    
+}
+
+/** PROFESSIONAL **/
+div#content-professional {
+    text-align:center;
+}
+
+.activity-blob {
+    margin: 15px;
+    padding: 10px 5px 7px 5px;;
+    display: inline-block;
+    width: 20em;
 }
 
 /** FOOTER */
