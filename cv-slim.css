@@ -3,7 +3,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f0faff;
+  background: #434343;
+
+  
+  background: radial-gradient(ellipse at top, #434343, transparent),
+            radial-gradient(ellipse at bottom,#e66465 , #333333);
 }
 
 /** GLOBAL */
@@ -31,13 +35,13 @@ div#header {
     align-items: center;
     justify-content: space-evenly;
 
-    background: #005480;
+    background: #333333;
     color: white;
-    height: 3em;
 
-    border-radius: 0 0 15% 15%;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+    background:-webkit-linear-gradient(90deg, rgb(38, 38, 38) 0%, rgba(0, 255, 0, 0) 80%);
+    background:-o-linear-gradient(90deg, rgb(38, 38, 38) 0%, rgba(0, 255, 0, 0) 80%);
+    background:-moz-linear-gradient(90deg, rgb(38, 38, 38) 0%, rgba(0, 255, 0, 0) 80%);
+    background:linear-gradient(90deg, rgb(38, 38, 38) 0%, rgba(0, 255, 0, 0) 80%);
 }
 
 .navigationElement {
@@ -50,14 +54,24 @@ div#header {
     height: 80%;
     
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 3px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
 
-    border-radius: 15%;
+.navigationElementTop {
+
+    padding-top: 1em;
+    padding-bottom: 0.4em;
+}
+
+.navigationElementBottom {
+
+    padding-top: 0.4em;
 }
 
 .navigationElement:hover {
-    color: black;
-    background-color: white;
+
+    background-color: #434343;
 }
 
 /** CONTENT */
@@ -70,6 +84,14 @@ div#page {
 .content {
     padding-bottom: 2em;
     margin: 0 15% 0 15%;
+}
+
+.coloredBorder {
+
+    border-image: linear-gradient(to right, #777777 0%, #e66465 100%);
+
+    border-image-slice: 1;
+    border-width: 0.15em;
 }
 
 /** CONTENT LATEST **/
@@ -106,5 +128,10 @@ div#footer {
     position: absolute;
     width: 100%;
     color: white;
-    background: #005480;
+    background: #333333;
+
+    background:-webkit-linear-gradient(90deg, rgba(0, 255, 0, 0) 0%, rgb(38, 38, 38) 80%);
+    background:-o-linear-gradient(90deg, rgba(0, 255, 0, 0) 0%, rgb(38, 38, 38) 80%);
+    background:-moz-linear-gradient(90deg, rgba(0, 255, 0, 0) 0%, rgb(38, 38, 38) 80%);
+    background:linear-gradient(90deg, rgba(0, 255, 0, 0) 0%, rgb(38, 38, 38) 80%);
 }
