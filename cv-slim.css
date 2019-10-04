@@ -231,7 +231,7 @@ div#content-professional {
     padding: 10px 0 30px 20px;
 }
 
-.skills-blob {
+.skills-headline, .skills-blob {
     margin: 15px;
     padding: 10px 10px 6px 10px;;
     display: inline-block;
@@ -240,6 +240,15 @@ div#content-professional {
     padding: 10px;
     border-radius: 2em / 5em;
     background: rgba(255, 255, 255, 0.10);
+}
+
+.skills-headline {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.skills-blob:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .highlight-blob {
