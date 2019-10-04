@@ -107,10 +107,6 @@ div#page {
     border-width: 0.15em;
 }
 
-.no-border {
-    border-color: rgba(0, 0, 0, 0)
-}
-
 /** CONTENT LATEST **/
 
 div#content-latest {
