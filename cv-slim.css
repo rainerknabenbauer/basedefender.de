@@ -217,8 +217,29 @@ div#content-professional {
 
 /** Skills / Contains **/
 
+.likes {
+    margin: 15px;
+    padding: 10px 5px 7px 5px;;
+    display: inline-block;
+    width: 13em;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.55);
+    letter-spacing: 4px;
+}
+
 .skills-padding {
     padding: 10px 0 30px 20px;
+}
+
+.skills-blob {
+    margin: 15px;
+    padding: 10px 10px 6px 10px;;
+    display: inline-block;
+    width: 20em;    
+    line-height: 1.3em;
+    padding: 10px;
+    border-radius: 2em / 5em;
+    background: rgba(255, 255, 255, 0.10);
 }
 
 .highlight-blob {
