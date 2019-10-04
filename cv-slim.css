@@ -15,6 +15,13 @@ body {
 
 /** GLOBAL */
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
 .border {
     border-color: lightgray;
     border-style: solid;
@@ -32,7 +39,7 @@ body {
 }
 
 .headline-padding {
-    padding: 45px 0 45px 20px;    
+    padding: 33px 0 33px 20px;    
 }
 
 .inner-padding {
@@ -136,9 +143,7 @@ div.rotate-left {
 }
 
 .activity-blob:hover {
-    border-left: 3px solid rgb(207, 157, 47);
-    border-right: 3px solid rgb(207, 157, 47);
-    border-bottom: 2px solid rgb(199, 107, 46);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 div#profile {
@@ -180,10 +185,23 @@ div#content-professional {
     padding: 10px 10px 6px 10px;;
     display: inline-block;
     width: 20em;    
-    line-height: 1.5em;
-    border: 2px solid rgb(209, 114, 50);
+    line-height: 1.3em;
     padding: 10px;
     border-radius: 2em / 5em;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.company {
+    font-family: 'open sans',arial,sans-serif;
+    font-size: 10pt;
+    letter-spacing: 1pt;
+    font-variant: small-caps;
+}
+
+.job-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    left: 4pt;
 }
 
 /** FOOTER */

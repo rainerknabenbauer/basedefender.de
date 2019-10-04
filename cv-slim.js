@@ -19,9 +19,9 @@ $(document).ready(function () {
         hideContent(content);
     });
 
-    $("#header-forFun").click(function () {
+    $("#header-contains").click(function () {
 
-        let content = "content-forFun";
+        let content = "content-contains";
 
         hideContent(content);
     });
@@ -45,11 +45,4 @@ function hideContent(content) {
     });
 
     $("#" + content).fadeIn(fadeInSpeed);
-}
-
-// HOVER
-function hoverSkill() {
-
-    let element = document.getElementsByClassName(":focus")
-
 }
