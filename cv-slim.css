@@ -39,7 +39,8 @@ body {
 }
 
 .headline-padding {
-    padding: 33px 0 33px 20px;    
+    height: 45px;
+    padding: 2em 0 0.5em 0px;    
 }
 
 .inner-padding {
@@ -114,10 +115,20 @@ div#page {
 
 div#content-latest {
     text-align: center;
+    padding-top: 3em;
 }
 
 img#mugshot:hover {
     opacity: 0.8;
+}
+
+span#slogan {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+span#slogan-text {
+    font-family: 'Tangerine', cursive;
+    font-size: 25pt;
 }
 
 div.rotate-right {
@@ -210,7 +221,7 @@ div#content-professional {
     padding: 10px 0 30px 20px;
 }
 
-.main-skills {
+.highlight-blob {
     background: rgba(255, 255, 255, 0.3);
 }
 
