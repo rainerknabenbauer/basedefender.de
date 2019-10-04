@@ -187,7 +187,7 @@ div#content-professional {
     display: inline-block;
     width: 13em;
     font-size: x-large;
-    color: rgba(0, 0, 0, 0.411);
+    color: rgba(255, 255, 255, 0.3);
     letter-spacing: 4px;
 }
 
@@ -218,7 +218,7 @@ div#content-professional {
 /** Skills / Contains **/
 
 .likes {
-    color: rgba(0, 0, 0, 0.55);
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .skills-padding {
