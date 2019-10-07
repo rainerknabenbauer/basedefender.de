@@ -271,7 +271,7 @@ div#footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
@@ -280,8 +280,9 @@ div#footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 50px;
-  color: white;
+  font-size: 2em;
+  text-align: justify;
+  color: rgba(255,255,255,0.6);;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }

@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     $("#ecube").click(function () {
 
-        overlay = event.target.id;
+        overlay = "ecube";
 
         overlayOn();
     });
@@ -61,12 +61,12 @@ function hideContent(content) {
 }
 
 // OVERLAY
-function overlayOn(clickedElementId) {
+function overlayOn() {
     document.getElementById("overlay").style.display = "block";
-    document.getElementById(overlay).style.display = "block";
+    document.getElementById(overlay + "-description").style.display = "block";
 }
 
 function overlayOff() {
     document.getElementById("overlay").style.display = "none";
-    document.getElementById(overlay).style.display = "none";
+    document.getElementById(overlay + "-description").style.display = "none";
 } 
