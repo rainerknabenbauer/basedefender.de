@@ -1,5 +1,6 @@
 
 let fadeInSpeed = "fast";
+let overlay;
 
 $(document).ready(function () {
 
@@ -33,14 +34,16 @@ $(document).ready(function () {
         hideContent(content);
     });
 
+    $("#ecube").click(function () {
+
+        overlay = event.target.id;
+
+        overlayOn();
+    });
+
     $("#overlay").click(function () {
 
         overlayOff();
-    });
-
-    $("#ecube").click(function () {
-
-        overlayOn();
     });
 });
 
@@ -58,10 +61,12 @@ function hideContent(content) {
 }
 
 // OVERLAY
-function overlayOn() {
+function overlayOn(clickedElementId) {
     document.getElementById("overlay").style.display = "block";
+    document.getElementById(overlay).style.display = "block";
 }
 
 function overlayOff() {
     document.getElementById("overlay").style.display = "none";
+    document.getElementById(overlay).style.display = "none";
 } 
