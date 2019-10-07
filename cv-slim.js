@@ -41,6 +41,34 @@ $(document).ready(function () {
         overlayOn();
     });
 
+    $("#icamsystems").click(function () {
+
+        overlay = "icamsystems";
+
+        overlayOn();
+    });
+
+    $("#lmx").click(function () {
+
+        overlay = "lmx";
+
+        overlayOn();
+    });
+
+    $("#einsupershop").click(function () {
+
+        overlay = "einsupershop";
+
+        overlayOn();
+    });
+
+    $("#bachelor").click(function () {
+
+        overlay = "bachelor";
+
+        overlayOn();
+    });
+
     $("#overlay").click(function () {
 
         overlayOff();

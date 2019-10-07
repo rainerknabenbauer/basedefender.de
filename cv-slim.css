@@ -47,6 +47,10 @@ body {
     padding: 30px 0 30px 20px;    
 }
 
+ul {
+    list-style-type: disc;
+}
+
 /** HEADER */
 
 div#header {
@@ -122,9 +126,9 @@ span#slogan {
     color: rgba(0, 0, 0, 0.8);
 }
 
-span#slogan-text {
+span#slogan-text, .job-title-description {
     font-family: 'Tangerine', cursive;
-    font-size: 25pt;
+    font-size: 2em;
 }
 
 div.rotate-right {
@@ -280,9 +284,10 @@ div#footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: justify;
   color: rgba(255,255,255,0.6);;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+  display: none;
 }
