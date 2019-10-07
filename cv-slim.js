@@ -28,9 +28,19 @@ $(document).ready(function () {
 
     $("#header-docs").click(function () {
 
-        let content = "content-forFun";
+        let content = "content-documents";
 
         hideContent(content);
+    });
+
+    $("#overlay").click(function () {
+
+        overlayOff();
+    });
+
+    $("#ecube").click(function () {
+
+        overlayOn();
     });
 });
 
@@ -46,3 +56,12 @@ function hideContent(content) {
 
     $("#" + content).fadeIn(fadeInSpeed);
 }
+
+// OVERLAY
+function overlayOn() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function overlayOff() {
+    document.getElementById("overlay").style.display = "none";
+} 
