@@ -193,16 +193,6 @@ div#content-professional {
     letter-spacing: 4px;
 }
 
-.activity-blob {
-    margin: 15px;
-    padding: 10px 10px 6px 10px;;
-    display: inline-block;
-    width: 20em;    
-    line-height: 1.3em;
-    padding: 10px;
-    border-radius: 2em / 5em;
-    background: rgba(255, 255, 255, 0.05);
-}
 
 .company {
     font-family: 'open sans',arial,sans-serif;
@@ -227,7 +217,7 @@ div#content-professional {
     padding: 10px 0 30px 20px;
 }
 
-.skills-headline, .skills-blob {
+.skills-headline, .skills-blob, .activity-blob {
     margin: 15px;
     padding: 10px 10px 6px 10px;;
     display: inline-block;
