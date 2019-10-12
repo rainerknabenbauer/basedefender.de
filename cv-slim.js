@@ -1,6 +1,6 @@
 
 let fadeInSpeed = "fast";
-let overlay;
+let overlay = "ecube";
 
 $(document).ready(function () {
 
@@ -71,12 +71,14 @@ $(document).ready(function () {
 
     $("#overlay").click(function () {
 
-        overlayOff();
+        removeJobOverlay();
     });
 });
 
 // CONTENT
 function hideContent(content) {
+
+    removeJobOverlay();
 
     let elements = document.getElementsByClassName("content");
 
@@ -94,7 +96,7 @@ function overlayOn() {
     document.getElementById(overlay + "-description").style.display = "block";
 }
 
-function overlayOff() {
+function removeJobOverlay() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById(overlay + "-description").style.display = "none";
 } 
