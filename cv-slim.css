@@ -34,6 +34,11 @@ body {
     margin: 25px 15% 0 15%;
 }
 
+.fill-screen {
+    width: 100%;
+    height: 100%;
+}
+
 .invisible {
     display: none;
 }
@@ -240,6 +245,13 @@ div#content-professional {
 .highlight-blob {
     background: rgba(255, 255, 255, 0.3);
 }
+
+/** DOCUMENTS */
+#content-documents {
+    color: rgba(255, 255, 255, 0.7);
+    background: rgb(45,45,45, 0.6);
+    padding: 5% 0 15% 7%;
+} 
 
 /** FOOTER */
 

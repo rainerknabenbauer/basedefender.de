@@ -27,7 +27,7 @@ $(document).ready(function () {
         hideContent(content);
     });
 
-    $("#header-docs").click(function () {
+    $("#header-documents").click(function () {
 
         let content = "content-documents";
 
